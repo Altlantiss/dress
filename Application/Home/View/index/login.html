@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link href="__PUBLIC__/denglu_files/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/denglu_files/font-awesome.css" rel="stylesheet">
+	<link href="__PUBLIC__/denglu_files/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/denglu_files/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/denglu_files/style.css" rel="stylesheet">
+	<style type="text/css">
+		.tooltip-inner  {max-width:300px;width:120px}
+	</style>
+</head>
+
+<body class="gray-bg">
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+                <img src="__PUBLIC__/denglu_files/logo.png" border="0" class="  logo-name">
+            </div>
+            <form class="m-t bv-form" id="loginform" novalidate="novalidate">
+                <div class="form-group has-feedback">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="用户名" required="" data-bv-field="username">
+                    <i class="form-control-feedback" data-bv-icon-for="username" style="display: none; top: 0px;"></i>
+                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">用户名无法为空！</small>
+                    <small class="help-block" data-bv-validator="stringLength" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">用户名必须大于2位小于20位！</small>
+                    <small class="help-block" data-bv-validator="regexp" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">用户名只能包含字母数字和字符和@-/.+</small>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="密码" required="" data-bv-field="password">
+                    <i class="form-control-feedback" data-bv-icon-for="password" style="display: none; top: 0px;"></i>
+                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">密码不能为空！</small>
+                    <small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">密码必须大于5位！</small>
+                    <small class="help-block" id="error-message" style="color: red;"></small>
+                </div>
+                <button type="button" class="btn btn-primary block full-width m-b" onclick="login()">登录</button>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title=""><small>忘记密码?</small></a>
+            </form>
+            <p class="m-t"> <small> © 2017  </small> </p>
+        </div>
+    </div>
+<!-- 警告框 -->
+	<div id="ycf-alert" class="modal">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+					<h5 class="modal-title"><i class="fa fa-exclamation-circle"></i> [Title]</h5>
+				</div>
+				<div class="modal-body small">
+					<p>[Message]</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary ok" data-dismiss="modal">[BtnOk]</button>
+					<button type="button" class="btn btn-default cancel" data-dismiss="modal">[BtnCancel]</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Mainly scripts -->
+<script src="__PUBLIC__/denglu_files/jquery-2.1.1.js"></script>
+<script src="__PUBLIC__/denglu_files/bootstrap.min.js"></script>
+<script src="__PUBLIC__/denglu_files/bootstrapValidator.js"></script>
+
+<script type="text/javascript">
+    //登录
+    function login(){
+        var name = $("#username").val();
+        var pwd = $("#password").val();
+
+        $.ajax( {
+            type : "post",	
+            url : "http://www.dress.com/index.php/Home/Login/login",
+            data : {
+              name: name,
+              pwd: pwd
+            },
+            dataType:"json",
+            success : function(data) {
+              console.log(data);
+              if(data.status == 1) {
+                window.location.href="http://www.dress.com/index.php/Home/Index/home";
+              } else if(data.status == 0) {
+                $("#error-message").text(data.message);
+              }
+            },
+            error : function(error) {
+               console.log("登录不成功");
+            }
+        });
+		return false;
+    }
+</script>
+</body></html>

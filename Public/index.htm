@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://121.43.176.181:81/index/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./index_files/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="./index_files/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="./index_files/jquery.gritter.css" rel="stylesheet">
+
+    <link href="./index_files/animate.css" rel="stylesheet">
+    <link href="./index_files/style.css" rel="stylesheet">
+    
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body class="pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div id="wrapper">
+    
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span> <img alt="image" class="img-circle" src="./index_files/profile_small.jpg"> </span> <a data-toggle="dropdown" class="dropdown-toggle" href="http://121.43.176.181:81/index/index#"> <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"></strong> </span> <span class="text-muted text-xs block"><b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">个人信息</a></li>
+                            <li><a href="#">修改密码</a></li>
+                            <li class="divider"></li>
+                            <li><a onclick="logout()">退出登录</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element"> <img src="./index_files/logoS.png"> </div>
+                </li>
+
+
+                <li class=""> <a href="#">
+                    <span class="nav-label">会员管理</span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="./member_information.html">会员信息</a></li>
+                        <li><a href="./member_add.html">增加会员</a></li>
+                    </ul>
+                </li>
+                <li class=""> <a href="#">
+                    <span class="nav-label">存储情况</span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">租赁详情</a></li>
+                    </ul>
+                </li>
+                <li class=""> <a href="#">
+                    <span class="nav-label">进货情况</span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">礼服展示</a></li>
+                        <li><a href="#">礼服新增</a></li>
+                    </ul>
+                </li>
+                <li class=""> <a href="#">
+                    <span class="nav-label">礼服租赁</span>
+                </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">查看租赁</a></li>
+                        <li><a href="#">添加租赁</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="page-wrapper" class="gray-bg dashbard-1" style="min-height: 371px;">
+        
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <div class="pagetitle">礼服管理系统</div>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li> <span class="m-r-sm text-muted welcome-message">欢迎</span> </li>
+                    <li class="dropdown"><a class="dropdown-toggle count-info" href="http://121.43.176.181:81/index/index#">  <!--<i class="fa fa-bell"></i> <span class="label label-primary">8</span>--> </a> </li>
+                    <li> <a onclick="logout()"> 退出 </a> </li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+    
+
+
+        <div class="footer">
+            <div class="pull-right">
+                <strong>XXX</strong> 版权所有 © 2017
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- 警告框 -->
+	
+
+
+
+
+    <!-- Mainly scripts -->
+    <script src="./index_files/jquery-2.1.1.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/jquery.metisMenu.js"></script>
+    <script src="./index_files/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="./index_files/jquery.flot.js"></script>
+    <script src="./index_files/jquery.flot.tooltip.min.js"></script>
+    <script src="./index_files/jquery.flot.spline.js"></script>
+    <script src="./index_files/jquery.flot.resize.js"></script>
+    <script src="./index_files/jquery.flot.pie.js"></script>
+
+    <!-- Peity -->
+    <script src="./index_files/jquery.peity.min.js"></script>
+    <script src="./index_files/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="./index_files/inspinia.js"></script>
+    <script src="./index_files/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="./index_files/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="./index_files/jquery.gritter.min.js"></script>
+
+    <!-- EayPIE -->
+    <script src="./index_files/jquery.easypiechart.js"></script>
+
+    <!-- Sparkline -->
+    <script src="./index_files/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="./index_files/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="./index_files/Chart.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+        });
+
+    </script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var url = window.location.pathname;
+        if(url != "/" && url != "/index/index"){
+            $("li").removeClass("active");
+            $("[href*='" + url + "']").parent().parent().parent().addClass("active");
+            $("[href*='" + url + "']").parent().parent().addClass("in");
+            $("[href*='" + url + "']").parent().addClass("active");
+        }
+
+        window.Modal = function () {
+            var reg = new RegExp("\\[([^\\[\\]]*?)\\]", 'igm');
+            var alr = $("#ycf-alert");
+            var ahtml = alr.html();
+
+            //关闭时恢复 modal html 原样，供下次调用时 replace 用
+            //var _init = function () {
+            //	alr.on("hidden.bs.modal", function (e) {
+            //		$(this).html(ahtml);
+            //	});
+            //}();
+
+            /* html 复原不在 _init() 里面做了，重复调用时会有问题，直接在 _alert/_confirm 里面做 */
+            var _alert = function (options) {
+                alr.html(ahtml);	// 复原
+                alr.find('.ok').removeClass('btn-success').addClass('btn-primary');
+                alr.find('.cancel').hide();
+                _dialog(options);
+
+                return {
+                    on: function (callback) {
+                        if (callback && callback instanceof Function) {
+                            alr.find('.ok').click(function () { callback(true) });
+                        }
+                    }
+                };
+            };
+
+            var _confirm = function (options) {
+                alr.html(ahtml); // 复原
+                alr.find('.ok').removeClass('btn-primary').addClass('btn-success');
+                alr.find('.cancel').show();
+                _dialog(options);
+
+                return {
+                    on: function (callback) {
+                        if (callback && callback instanceof Function) {
+                            alr.find('.ok').click(function () { callback(true) });
+                            alr.find('.cancel').click(function () { callback(false) });
+                        }
+                    }
+                };
+            };
+
+            var _dialog = function (options) {
+                var ops = {
+                    msg: "提示内容",
+                    title: "操作提示",
+                    btnok: "确定",
+                    btncl: "取消"
+                };
+
+                $.extend(ops, options);
+
+                console.log(alr);
+
+                var html = alr.html().replace(reg, function (node, key) {
+                    return {
+                        Title: ops.title,
+                        Message: ops.msg,
+                        BtnOk: ops.btnok,
+                        BtnCancel: ops.btncl
+                    }[key];
+                });
+
+                alr.html(html);
+                alr.modal({
+                    width: 500,
+                    backdrop: 'static'
+                });
+            }
+
+            return {
+                alert: _alert,
+                confirm: _confirm
+            }
+
+        }();
+
+    })
+    //登出
+    function logout(){
+        Modal.confirm(
+                {
+                    msg: "是否继续退出？"
+                }).on( function (e) {
+                    if(e==true){
+                        $.ajax( {
+                            type : "post",
+                            url : "../index/logout",
+                            data : {},
+                            dataType:"json",
+                            success : function(data) {
+                                if(data.code==1){
+                                    location.href='../login/index';
+                                }else{
+
+                                }
+                            },
+                            error : function(data) {
+
+                            }
+                        });
+                    }
+
+                });
+
+    }
+</script>
+
+<div id="ycf-alert" class="modal">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+					<h5 class="modal-title"><i class="fa fa-exclamation-circle"></i> [Title]</h5>
+				</div>
+				<div class="modal-body small">
+					<p>[Message]</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary ok" data-dismiss="modal">[BtnOk]</button>
+					<button type="button" class="btn btn-default cancel" data-dismiss="modal">[BtnCancel]</button>
+				</div>
+			</div>
+		</div>
+	</div></body></html>

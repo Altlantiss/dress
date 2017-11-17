@@ -1,0 +1,1260 @@
+[ 2017-11-11T15:12:50+08:00 ] 127.0.0.1 /index.php/home/purchase/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+ERR: 非法操作:showlist
+
+[ 2017-11-11T15:13:21+08:00 ] 127.0.0.1 /index.php/home/purchase/purchaseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_dresses` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`dress_name`,`dress_sex` FROM `dress_dresses`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042003s ]
+
+[ 2017-11-11T15:13:31+08:00 ] 127.0.0.1 /index.php/home/purchase/purchaseList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_dresses` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`dress_name`,`dress_sex` FROM `dress_dresses`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:13:44+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:39+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:40+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T15:19:41+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:41+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:41+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T15:19:41+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:41+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:41+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T15:19:42+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:42+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:19:50+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_dresses.id = dress_storage.id   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:38:18+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T15:38:18+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T15:38:19+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T15:38:19+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:38:19+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:38:19+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:38:19+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:38:20+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:38:36+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:39:44+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T15:39:47+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\BaiduYunDownload\test\Application\Home\Controller\StorageController.class.php 第 18 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T15:40:01+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+
+[ 2017-11-11T15:40:07+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:42:33+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0080s ]
+SQL: SELECT `dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:42:51+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id  
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id  
+
+[ 2017-11-11T15:43:19+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT `dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-11-11T15:43:49+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT `dress_name` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id  LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-11T15:44:37+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0070s ]
+SQL: SELECT `dress_name`,`dress_sex`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+
+[ 2017-11-11T15:44:41+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0080s ]
+SQL: SELECT `dress_name`,`dress_sex`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:47:42+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT `dress_name`,`dress_sex`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T15:47:47+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT `dress_name`,`dress_sex`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:47:48+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT `dress_name`,`dress_sex`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:57:13+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_rent`  [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\BaiduYunDownload\test\Application\Home\Controller\RentController.class.php 第 17 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T15:57:31+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_rent`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:01:09+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`did`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`overdue_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`did`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`overdue_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+
+[ 2017-11-11T16:02:29+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+ERR: 1052:Column 'uid' in field list is ambiguous
+ [ SQL语句 ] : SELECT `uid` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+ERR: 1052:Column 'uid' in field list is ambiguous
+ [ SQL语句 ] : SELECT `uid` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+
+[ 2017-11-11T16:02:56+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT `dress_ma` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:03:03+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+ERR: 1052:Column 'uid' in field list is ambiguous
+ [ SQL语句 ] : SELECT `uid` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+ERR: 1052:Column 'uid' in field list is ambiguous
+ [ SQL语句 ] : SELECT `uid` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+
+[ 2017-11-11T16:05:17+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:08:30+08:00 ] 127.0.0.1 /index.php/home/storage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_storage` [ RunTime:0.0060s ]
+SQL: SELECT `dress_name`,`dress_sex`,`dress_number` FROM `dress_storage` INNER JOIN dress_dresses ON dress_storage.id = dress_dresses.id   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:08:34+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:08:41+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`uid`,`did`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`overdue_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`uid`,`did`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`overdue_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid  
+
+[ 2017-11-11T16:31:30+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:31:46+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T16:31:52+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:32:10+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:32:15+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:33:43+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: name D:\BaiduYunDownload\test\Application\Home\Controller\RentController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:34:13+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T16:34:22+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0030s ]
+
+[ 2017-11-11T16:34:27+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index:  D:\BaiduYunDownload\test\Application\Home\Controller\RentController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:34:30+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T16:34:33+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T16:34:55+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T18:34:00+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T18:56:26+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT dress_ma,dress_receive,plan_return,actual_return,overdue_return,dress_man,dress_woman,deposit,receipt_number,`handler`,date,state,name,tel,qq,dress_name,dress_udrm.number FROM dress_rent JOIN dress_user ON dress_rent.uid = dress_user.uid JOIN dress_dresses ON dress_dresses.did = dress_rent.did JOIN dress_udrm ON dress_dresses.did = dress_udrm.did [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T18:57:21+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T18:58:22+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:01:39+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:03:38+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_rent.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T19:04:20+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_rent.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T19:05:07+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:05:08+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:05:09+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:05:09+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:05:09+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:05:10+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:06:11+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:06:11+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:06:11+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:06:13+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0100s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:06:14+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:06:14+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:06:14+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_dresses ON dress_rent.did = dress_dresses.did INNER JOIN dress_udrm ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:07:10+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T19:49:38+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+SQL: INSERT INTO `dress_rent` () VALUES () [ RunTime:0.0000s ]
+NOTIC: [2] Illegal string offset 'id' D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T19:49:52+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+SQL: INSERT INTO `dress_rent` () VALUES () [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'id' D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T20:08:10+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+SQL: INSERT INTO `dress_rent` () VALUES () [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'id' D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-11T20:09:29+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 372 行.
+NOTIC: [8] Undefined variable: set D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+
+[ 2017-11-11T20:10:06+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0090s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 372 行.
+NOTIC: [8] Undefined variable: set D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+
+[ 2017-11-11T20:10:07+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0080s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 372 行.
+NOTIC: [8] Undefined variable: set D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+
+[ 2017-11-11T20:10:07+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0090s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 372 行.
+NOTIC: [8] Undefined variable: set D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+
+[ 2017-11-11T20:10:07+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 372 行.
+NOTIC: [8] Undefined variable: set D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+
+[ 2017-11-11T20:10:07+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 372 行.
+NOTIC: [8] Undefined variable: set D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\BaiduYunDownload\test\ThinkPHP\Library\Think\Db\Driver.class.php 第 387 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 )' at line 1
+ [ SQL语句 ] : UPDATE `dress_rent` SET  WHERE ( uid=1 )
+
+[ 2017-11-11T20:24:01+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_udrm ON dress_rent.uid = dress_udrm.uid INNER JOIN dress_dresses ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-11T20:24:27+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state`,`dress_name`,`number` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_udrm ON dress_rent.uid = dress_udrm.uid INNER JOIN dress_dresses ON dress_dresses.did = dress_udrm.did  ORDER BY name  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-11-11T20:25:25+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_name`,`number`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_udrm ON dress_rent.uid = dress_udrm.uid INNER JOIN dress_dresses ON dress_dresses.did = dress_udrm.did  ORDER BY name  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T20:26:29+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_name`,`number`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_udrm ON dress_rent.uid = dress_udrm.uid INNER JOIN dress_dresses ON dress_dresses.did = dress_udrm.did   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-11T20:26:43+08:00 ] 127.0.0.1 /index.php/home/rent/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dress_rent` [ RunTime:0.0060s ]
+SQL: SELECT `name`,`tel`,`qq`,`dress_name`,`number`,`dress_ma`,`dress_receive`,`plan_return`,`actual_return`,`dress_man`,`dress_woman`,`deposit`,`receipt_number`,`handler`,`date`,`state` FROM `dress_rent` INNER JOIN dress_user ON dress_user.uid = dress_rent.uid INNER JOIN dress_udrm ON dress_rent.uid = dress_udrm.uid INNER JOIN dress_dresses ON dress_dresses.did = dress_udrm.did  ORDER BY name  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

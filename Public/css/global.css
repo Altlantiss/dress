@@ -1,0 +1,9 @@
+.ctl {
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #4c89ff;
+}
+.ctl-delete {
+    color: #ff2f23;
+}

@@ -1,0 +1,30 @@
+.mainbox {
+    padding: 20px 30px;
+    padding-bottom: 25px;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.main-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table,table tr th, table tr td {
+    border:1px solid #ccc;
+}
+td, th {
+    padding: 10px 20px;
+}
+
+input.edit {
+    display: block;
+    width: 90px;
+}
+
+#edit-user-container td {
+    padding: 5px 5px;
+}
+#rent-list-container td {
+    padding: 5px 3px;
+}

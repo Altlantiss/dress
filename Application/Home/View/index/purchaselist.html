@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="__PUBLIC__/index_files/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/index_files/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="__PUBLIC__/index_files/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="__PUBLIC__/index_files/jquery.gritter.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/index_files/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/index_files/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/global.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/userlist.css">
+
+    <!--模板引擎-->
+    <script src="__PUBLIC__/js/template.js"></script>
+
+    <style type="text/css">
+        .jqstooltip {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0, 0, 0, 0.6);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            z-index: 10000;
+        }
+
+        .jqsfield {
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+        .dress-name {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body class="pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="wrapper">
+    <!-- 引入侧边菜单 -->
+    <include file="sidemenu" />
+
+    <div id="page-wrapper" class="gray-bg dashbard-1" style="min-height: 371px;">
+        <include file="header" />
+
+        <!-- 进货列表 -->
+        <div class="mainbox">
+            <table class="main-table" id="p-list-container">
+                <script id="p-list" type="text/html">
+                <tr>
+                    <th>id</th>
+                    <th>礼服名称</th>
+                    <th>适用性别</th>
+                    <th>进货数量</th>
+                    <th>操作</th>
+                </tr>
+
+                {{each pData data i}}
+                    <tr>
+                        <td class="dress-id">{{data.id}}</td>
+                        <td class="dress-name">{{data.dress_name}}<span style="display: block; width: 120px; height: 120px; background-image: url('http://www.dress.com/Public/images/{{data.id}}.jpg'); background-size: cover"></span></td>
+                        <td>{{if data.dress_sex==0}}女{{else if data.dress_sex==1}}男{{/if}}</td>
+                        <td>
+                            <input type="number" class="p-num" value="1">
+                        </td>
+                        <td>
+                            <span class="ctl ctl-edit" onclick="addItem({{data.id}})">进货</span>
+                        </td>
+                    </tr>
+                {{/each}}
+                </script>
+            </table>
+        </div>
+
+        <!-- 引入底部 -->
+        <include file="footer" />
+    </div>
+</div>
+
+
+
+<!-- Mainly scripts -->
+<script src="__PUBLIC__/index_files/jquery-2.1.1.js"></script>
+<script src="__PUBLIC__/index_files/bootstrap.min.js"></script>
+<script src="__PUBLIC__/index_files/jquery.metisMenu.js"></script>
+<script src="__PUBLIC__/index_files/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="__PUBLIC__/index_files/jquery.flot.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.tooltip.min.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.spline.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.resize.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.pie.js"></script>
+
+<!-- Peity -->
+<script src="__PUBLIC__/index_files/jquery.peity.min.js"></script>
+<script src="__PUBLIC__/index_files/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="__PUBLIC__/index_files/inspinia.js"></script>
+<script src="__PUBLIC__/index_files/pace.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="__PUBLIC__/index_files/jquery-ui.min.js"></script>
+
+<!-- GITTER -->
+<script src="__PUBLIC__/index_files/jquery.gritter.min.js"></script>
+
+<!-- EayPIE -->
+<script src="__PUBLIC__/index_files/jquery.easypiechart.js"></script>
+
+<!-- Sparkline -->
+<script src="__PUBLIC__/index_files/jquery.sparkline.min.js"></script>
+
+<!-- Sparkline demo data  -->
+<script src="__PUBLIC__/index_files/sparkline-demo.js"></script>
+
+<!-- ChartJS-->
+<script src="__PUBLIC__/index_files/Chart.min.js"></script>
+<script type="text/javascript">
+  $(function () {
+    getPList();
+  });
+  function getPList() {
+    $.ajax({
+      type: 'post',
+      url: 'http://www.dress.com/index.php/Home/Purchase/purchaseList',
+      dataType: 'json',
+      success: function(data) {
+        console.log(data);
+        var pList = template('p-list', {
+          pData: data.data
+        });
+        $('#p-list-container').html(pList);
+      },
+      error: function (xhr, err) {
+
+      }
+    })
+  }
+
+  function addItem(id) {
+    var num;
+    $('.dress-id').each(function (index, ele) {
+      if ($(ele).text() == id) {
+        num = $('.p-num').eq(index).val();
+      }
+    });
+    console.log(id, num)
+    $.ajax({
+      type: 'post',
+      url: 'http://www.dress.com/index.php/Home/Purchase/purchase',
+      dataType: 'json',
+      data: {
+        id: id,
+        number: num
+      },
+      success: function (data) {
+        console.log(data);
+        if (data.status == 1) {
+          location.href = 'http://www.dress.com/index.php/Home/Index/storage'
+        } else {
+          console.error('进货失败');
+        }
+      },
+      error: function (xhr, err) {
+
+      }
+    })
+  }
+
+</script>
+
+</body>
+</html>

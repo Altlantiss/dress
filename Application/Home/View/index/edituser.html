@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="__PUBLIC__/index_files/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/index_files/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="__PUBLIC__/index_files/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="__PUBLIC__/index_files/jquery.gritter.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/index_files/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/index_files/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/global.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/userlist.css">
+
+    <!--模板引擎-->
+    <script src="__PUBLIC__/js/template.js"></script>
+
+    <style type="text/css">
+        .jqstooltip {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0, 0, 0, 0.6);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            z-index: 10000;
+        }
+
+        .jqsfield {
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body class="pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="wrapper">
+    <!-- 引入侧边菜单 -->
+    <include file="sidemenu" />
+
+    <div id="page-wrapper" class="gray-bg dashbard-1" style="min-height: 371px;">
+        <include file="header" />
+
+        <!-- 修改会员 -->
+        <div class="mainbox">
+            <table class="main-table" id="edit-user-container">
+                <script id="edit-user" type="text/html">
+                <tr>
+                    <th>id</th>
+                    <th>用户名</th>
+                    <th>电话</th>
+                    <th>QQ</th>
+                    <th>总消费金额</th>
+                    <th>总积分</th>
+                    <th>剩余积分</th>
+                    <th>会员卡号</th>
+                    <th>折扣</th>
+                    <th>操作</th>
+                </tr>
+
+                <tr>
+                    <td>{{data.id}}</td>
+                    <td>
+                        <input type="text" class="edit" id="up-name" value="{{data.name}}">
+                    </td>
+                    <td>
+                        <input type="text" class="edit" id="up-tel" value="{{data.tel}}">
+                    </td>
+                    <td>
+                        <input type="text" class="edit" id="up-qq" value="{{data.qq}}">
+                    </td>
+                    <td>
+                        <input type="text" class="edit" id="up-total_consumption" value="{{data.total_consumption}}">
+                    </td>
+                    <td>
+                        <input type="text" class="edit" id="up-total_integral" value="{{data.total_integral}}">
+                    </td>
+                    <td>
+                        <input type="text" class="edit" id="up-esidual_integral" value="{{data.esidual_integral}}">
+                    </td>
+                    <td>
+                        <input type="text" class="edit" id="up-card_number" value="{{data.card_number}}">
+                    </td>
+                    <td>
+                        <input type="text" class="edit" id="up-discount" value="{{data.discount}}">
+                    </td>
+                    <td>
+                        <span class="ctl ctl-edit" onclick="editUser({{data.id}})">保存修改</span>
+                    </td>
+                </tr>
+                </script>
+            </table>
+        </div>
+
+        <!-- 引入底部 -->
+        <include file="footer" />
+    </div>
+</div>
+
+
+
+<!-- Mainly scripts -->
+<script src="__PUBLIC__/index_files/jquery-2.1.1.js"></script>
+<script src="__PUBLIC__/index_files/bootstrap.min.js"></script>
+<script src="__PUBLIC__/index_files/jquery.metisMenu.js"></script>
+<script src="__PUBLIC__/index_files/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="__PUBLIC__/index_files/jquery.flot.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.tooltip.min.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.spline.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.resize.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.pie.js"></script>
+
+<!-- Peity -->
+<script src="__PUBLIC__/index_files/jquery.peity.min.js"></script>
+<script src="__PUBLIC__/index_files/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="__PUBLIC__/index_files/inspinia.js"></script>
+<script src="__PUBLIC__/index_files/pace.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="__PUBLIC__/index_files/jquery-ui.min.js"></script>
+
+<!-- GITTER -->
+<script src="__PUBLIC__/index_files/jquery.gritter.min.js"></script>
+
+<!-- EayPIE -->
+<script src="__PUBLIC__/index_files/jquery.easypiechart.js"></script>
+
+<!-- Sparkline -->
+<script src="__PUBLIC__/index_files/jquery.sparkline.min.js"></script>
+
+<!-- Sparkline demo data  -->
+<script src="__PUBLIC__/index_files/sparkline-demo.js"></script>
+
+<!-- ChartJS-->
+<script src="__PUBLIC__/index_files/Chart.min.js"></script>
+<script type="text/javascript">
+  $(function () {
+    var query = location.search.slice(1);
+    var id = query.split('=')[1];
+    getUser(id);
+  });
+  function getUser(id) {
+    $.ajax({
+      type: 'get',
+      url: 'http://www.dress.com/index.php/Home/User/selectId?id=' + id,
+      dataType: 'json',
+      success: function(data) {
+        console.log(data);
+        var userInfo = template('edit-user', {
+          data: data.data
+        });
+        $('#edit-user-container').html(userInfo);
+      },
+      error: function (xhr, err) {
+
+      }
+    })
+  }
+
+  function editUser(id) {
+    $.ajax({
+      type: 'post',
+      url: 'http://www.dress.com/index.php/Home/User/update',
+      dataType: 'json',
+      data: {
+        id: id,
+        name: $('#up-name').val(),
+        tel: $('#up-tel').val(),
+        qq: $('#up-qq').val(),
+        total_consumption: $('#up-total_consumption').val(),
+        total_integral: $('#up-total_integral').val(),
+        esidual_integral: $('#up-esidual_integral').val(),
+        discount: $('#up-discount').val()
+      },
+      success: function (data) {
+        console.log(data);
+        if (data.status == 1) {
+          location.href = 'http://www.dress.com/index.php/Home/Index/home';
+        } else {
+          console.error('修改失败');
+        }
+      },
+      error: function (xhr, err) {
+
+      }
+    })
+  }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+[ 2017-11-16T10:54:46+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T10:54:55+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T10:54:58+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T10:56:01+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T11:01:34+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T11:02:24+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T11:02:45+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_udrm` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_udrm` WHERE ( oid= )
+
+[ 2017-11-16T11:05:16+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T11:08:45+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T11:10:19+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T11:10:34+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `dress_rent` WHERE ( oid= )
+
+[ 2017-11-16T11:13:19+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dress_rent` WHERE ( oid= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dress_rent` WHERE ( oid= ) LIMIT 1  
+
+[ 2017-11-16T11:16:54+08:00 ] 127.0.0.1 /index.php/Home/Rent/delete
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dress_rent` WHERE ( oid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dress_rent` WHERE ( oid= ) 
+

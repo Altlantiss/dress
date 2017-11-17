@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="__PUBLIC__/index_files/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/index_files/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="__PUBLIC__/index_files/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="__PUBLIC__/index_files/jquery.gritter.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/index_files/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/index_files/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/global.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/userlist.css">
+
+    <!--模板引擎-->
+    <script src="__PUBLIC__/js/template.js"></script>
+
+    <style type="text/css">
+        .jqstooltip {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0, 0, 0, 0.6);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            z-index: 10000;
+        }
+
+        .jqsfield {
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body class="pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="wrapper">
+    <!-- 引入侧边菜单 -->
+    <include file="sidemenu" />
+
+    <div id="page-wrapper" class="gray-bg dashbard-1" style="min-height: 371px;">
+        <include file="header" />
+
+        <!-- 租赁列表 -->
+        <div class="mainbox">
+            <table class="main-table" id="rent-list-container">
+                <script id="rent-list" type="text/html">
+                <tr>
+                    <th>oid</th>
+                    <th>用户名</th>
+                    <th>电话</th>
+                    <th>QQ</th>
+                    <th>礼服名称</th>
+                    <th>数量</th>
+                    <th>计划领取日期</th>
+                    <th>实际领取日期</th>
+                    <th>计划归还日期</th>
+                    <th>实际归还日期</th>
+                    <th>逾期归还数量</th>
+                    <th>男礼服数量</th>
+                    <th>女礼服数量</th>
+                    <th>押金</th>
+                    <th>收据编号</th>
+                    <th>经手人</th>
+                    <th>日期</th>
+                    <th>订单状态</th>
+                    <th>操作</th>
+                </tr>
+
+                {{each rentData data i}}
+                    <tr>
+                        <td>{{data.oid}}</td>
+                        <td>{{data.name}}</td>
+                        <td>{{data.tel}}</td>
+                        <td>{{data.qq}}</td>
+                        <td>{{data.dress_name}}</td>
+                        <td>{{data.number}}</td>
+                        <td>{{data.dress_ma}}</td>
+                        <td>{{data.dress_receive}}</td>
+                        <td>{{data.plan_return}}</td>
+                        <td>{{data.actual_return}}</td>
+                        <td>{{data.overdue_return}}</td>
+                        <td>{{data.dress_man}}</td>
+                        <td>{{data.dress_woman}}</td>
+                        <td>{{data.deposit}}</td>
+                        <td>{{data.receipt_number}}</td>
+                        <td>{{data.handler}}</td>
+                        <td>{{data.date}}</td>
+                        <td>{{if data.state==1}}未开始{{else if data.state==2}}进行中{{else if data.state==3}}已结束{{else if data.state==4}}逾期{{/if}}</td>
+                        <td>
+                            <span class="ctl ctl-delete" onclick="deleteRent({{data.oid}})">删除</span>
+                        </td>
+                    </tr>
+                {{/each}}
+                </script>
+            </table>
+        </div>
+
+        <!-- 引入底部 -->
+        <include file="footer" />
+    </div>
+</div>
+
+
+
+<!-- Mainly scripts -->
+<script src="__PUBLIC__/index_files/jquery-2.1.1.js"></script>
+<script src="__PUBLIC__/index_files/bootstrap.min.js"></script>
+<script src="__PUBLIC__/index_files/jquery.metisMenu.js"></script>
+<script src="__PUBLIC__/index_files/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="__PUBLIC__/index_files/jquery.flot.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.tooltip.min.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.spline.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.resize.js"></script>
+<script src="__PUBLIC__/index_files/jquery.flot.pie.js"></script>
+
+<!-- Peity -->
+<script src="__PUBLIC__/index_files/jquery.peity.min.js"></script>
+<script src="__PUBLIC__/index_files/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="__PUBLIC__/index_files/inspinia.js"></script>
+<script src="__PUBLIC__/index_files/pace.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="__PUBLIC__/index_files/jquery-ui.min.js"></script>
+
+<!-- GITTER -->
+<script src="__PUBLIC__/index_files/jquery.gritter.min.js"></script>
+
+<!-- EayPIE -->
+<script src="__PUBLIC__/index_files/jquery.easypiechart.js"></script>
+
+<!-- Sparkline -->
+<script src="__PUBLIC__/index_files/jquery.sparkline.min.js"></script>
+
+<!-- Sparkline demo data  -->
+<script src="__PUBLIC__/index_files/sparkline-demo.js"></script>
+
+<!-- ChartJS-->
+<script src="__PUBLIC__/index_files/Chart.min.js"></script>
+<script type="text/javascript">
+  $(function () {
+    getRentList();
+  });
+  function getRentList() {
+    $.ajax({
+      type: 'post',
+      url: 'http://www.dress.com/index.php/Home/Rent/showList',
+      dataType: 'json',
+      data: {
+        userPage: 1
+      },
+      success: function(data) {
+        console.log(data);
+        var rentList = template('rent-list', {
+          rentData: data.data
+        });
+        $('#rent-list-container').html(rentList);
+      },
+      error: function (xhr, err) {
+
+      }
+    })
+  }
+
+  function deleteRent(oid) {
+      $.ajax({
+          type: 'post',
+          url: 'http://www.dress.com/index.php/Home/Rent/delete',
+          dataType: 'json',
+          data: {
+              oid: oid
+          },
+          success: function(data) {
+              console.log(data);
+              if (data.status == 1) {
+                  getRentList();
+              } else if (data.status == 0) {
+                  alert(data.message);
+              }
+
+          },
+          error: function (xhr, err) {
+
+          }
+      })
+  }
+
+</script>
+
+</body>
+</html>
